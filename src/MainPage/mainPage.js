@@ -1,5 +1,7 @@
 import EventItem from '../components/EventItem';
 import './mainPage.css';
+/* eslint-disable react/prop-types */
+// disabled react/destructuring-assignment
 
 export default function MainPage({ events }) {
   return (
@@ -23,11 +25,11 @@ export default function MainPage({ events }) {
               media.
             </div>
           </div>
+          <EventItem />
           <section>
-            <EventItem />
-            {events.map((event) => (
+            {/* {events.map((event) => (
               <EventItem key={event.id} event={event} />
-            ))}
+            ))} */}
           </section>
         </div>
         <button type="button" className="createButton">Create my event</button>

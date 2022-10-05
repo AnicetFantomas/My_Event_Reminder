@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { uuid } from 'uuid';
+/* eslint-disable react/prop-types */
+// disabled react/destructuring-assignment
 
 export default function EventForm({ addEvent }) {
   const [event, setEvent] = useState({
