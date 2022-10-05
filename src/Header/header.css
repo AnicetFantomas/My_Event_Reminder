@@ -5,8 +5,8 @@
 }
 
 .main-container {
-    width: 30%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #e4e4e4;
 }
@@ -65,5 +65,34 @@ h1 {
 
 .createButton {
     background-color: #db7df7;
-    
+    padding: 13px;
+    color: #fff;
+    align-self: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .main-container {
+        flex-direction: row;
+    }
+
+    .eventCard {
+        width: 400px;
+        height: 700px;
+    }
+
+    .createButton {
+        width: 300px;
+    }
+
+    .headerCardreverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
