@@ -8,7 +8,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #e4e4e4;
+    background-color: #f5f0f0;
+}
+
+.headerCardreverse {
+    width: 100%;
+    justify-content: center;
+    align-self: center;
 }
 
 h1 {
@@ -23,13 +29,15 @@ h1 {
 
 .description {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 121, 121);
 }
 
 .eventCard {
     background-color: #fff;
     width: 70%;
     height: 600px;
-    align-self: center;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
     overflow: hidden;
@@ -83,16 +91,29 @@ h1 {
     }
 
     .eventCard {
-        width: 400px;
-        height: 700px;
+        width: 300px;
+        height: 600px;
     }
 
     .createButton {
         width: 300px;
+        margin-right: 5%;
     }
 
     .headerCardreverse {
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    .header {
+        position: relative;
+        left: 22%;
+        top: 20%;
+    }
+
+    .header h1 {
+        font-size: 50px;
+        text-align: right;
+        font-weight: bold;
     }
 }

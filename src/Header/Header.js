@@ -39,6 +39,7 @@ export default function Header() {
                 <ion-icon name="pin"></ion-icon> Location:{" "}
               </div>
             </div>
+            <button className="likes"><ion-icon name="happy"></ion-icon></button>
           </div>
         </div>
       </div>
